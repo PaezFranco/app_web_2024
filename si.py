@@ -1,1 +1,1 @@
-print("ya pude perro")
+print("ya pude")
