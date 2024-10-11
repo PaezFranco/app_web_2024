@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo CSS</title>
+    <style>
+        .input-description {
+          display: block;  
+          margin-top: 4px; 
+          font-size: 0.9em; 
+          color: #555;     
+        }
+    </style>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div id="contenedor">
+    <header>
+      <h1>Aprendiendo CSS</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Página 1</a></li>
+        <li><a href="#">Página 2</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+      <div class="clearfix"></div>
+    </nav>
+
+    <section id="contenido">
+      <article class="articulo">
+        <h2>Titulo del Articulo 1</h2>
+        <p>Texto del artículo 1.</p>
+      </article>
+      <article class="articulo">
+        <h2>Titulo del Articulo 2</h2>
+        <p>Texto del artículo 2.</p>
+      </article>
+      <article class="articulo">
+        <h2>Titulo del Articulo 3</h2>
+        <p>Texto del artículo 3.</p>
+      </article>
+    </section>
+
+    <aside>
+      <h2>Barra Lateral</h2>
+      <form action="">
+          <input type="text" id="buscar" placeholder="Buscar...">
+          <input type="submit" value="Buscar">
+          <small class="input-description">Franco Amparo Web © 2024</small>
+      </form>
+    </aside>
+
+    <div class="clearfix"></div>
+  </div>
+
+  <footer>
+    <p>Franco Amparo Web © 2024 - Todos los derechos reservados.</p>
+  </footer>
+  
+</body>
+</html>

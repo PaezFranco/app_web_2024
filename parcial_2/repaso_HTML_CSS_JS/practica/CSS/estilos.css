@@ -1,0 +1,101 @@
+/* Quitar margenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contenedor {
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+header {
+    background-color: red;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    border-bottom: 10px solid white;
+}
+
+nav {
+    background-color: lightblue;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 30px;
+    line-height: 50px;
+    font-size: 20px;
+    
+    
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+
+#contenido {
+    float: left;
+    width: 75%; /* Sigue siendo 75% */
+    min-height: 500px;
+    background-color: green;
+    padding: 40px;
+}
+
+.articulo {
+    color: white;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.articulo h2 {
+    font-size: 25px;
+}
+
+aside {
+    float: left; 
+    width: 25%; 
+    min-height: 500px;
+    background-color: orange;
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto; 
+    clear: both;
+
+}
+
+.clearfix {
+    clear: both;
+}
