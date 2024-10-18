@@ -22,7 +22,7 @@ function operacion() {
         }
         resultado.innerHTML = `<h2>${n1} ${tipoOpe} ${n2} = ${ope}</h2>`;
     } else {
-        alert("Por favor, ingresa solo números válidos.");
+        alert("Por favor, ingresa solo números válidos");
     }
 }
 
