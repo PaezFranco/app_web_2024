@@ -9,7 +9,7 @@ def index(requets):
     })
 
 def about (request):
-    mensaje='Bienvenido mi Nombre es: Paulina Ale Breceda'
+    mensaje='Bienvenido mi Nombre es:Franco Paez Amparo'
     return render (request, 'mainapp/about.html', {
         'title': 'Acerca de Nosotros',
         'content': 'Estudiante que quiere pasar la materia',
