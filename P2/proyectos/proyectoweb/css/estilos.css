@@ -20,6 +20,7 @@ body{
 }
 
 .contenedor{
+    margin-top: 109px;
     margin: auto;
     width: 90%;
     max-width: 1920px;
@@ -109,6 +110,7 @@ body{
 }
 
 .titular h1{
+  
     font-size: 4vw;
     margin: 0;
 }
@@ -141,7 +143,8 @@ body{
 
 /* estilos seccion sobre mi*/
 .contenedor h3{
-    margin-top: 3rem;
+    margin-top: 120px;
+    /* margin-top: 3rem; */
     font-size: 7vmin;
     text-align: center;
     font-weight: bold;
@@ -177,6 +180,70 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+
+
+
+
+#proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px; /* Espacio superior para bajar la sección */
+    text-align: center;
+  }
+  
+  #proyecto .contenedor {
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  #proyecto h3 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: black; /* Color del texto del título */
+  }
+  
+  .contenedor-proyectos {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .contenedor-proyectos img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Opcional: bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para la imagen */
+  }
+  
+  .icon-arrow-up {
+    align-self: flex-start; /* Alinea la flecha a la izquierda */
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #0073e6;
+    margin-left: 20px; /* Ajusta la distancia desde el borde izquierdo */
+  }
+  
+  .icon-arrow-up:hover {
+    left: 0;
+    color: #005bb5; /* Color al pasar el cursor */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .email{
@@ -266,3 +333,209 @@ body{
     text-decoration: none;
     font-size: 5vmin;
 }
+
+
+
+
+
+
+.contact-title {
+    margin-top: 109px;
+  text-align: center; /* Centrar el título */
+  font-size: 47px;    /* Tamaño de la fuente */
+  font-weight: bold;  /* Grosor de la fuente */
+  color: black;        /* Color del texto */
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Opcional: agregar margen superior a la sección de contacto si quieres más espacio */
+.contact-section {
+  margin-top: 10px;
+}
+
+
+
+.contact-section {
+    display: flex;
+    max-width: 500px;
+    margin: 50px auto;
+    margin-top: 50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form,
+  .contact-info {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .contact-form {
+    background-color: #002b53;
+    color: #fff;
+  }
+  
+  .contact-form h2,
+  .contact-info h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #003366;
+    color: #fff;
+  }
+  
+  .contact-form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #002b53;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-info {
+    background-color: #d3b892;
+    color: #333;
+  }
+  
+  .contact-info p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-info li {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+
+  .image-gallery {
+    margin-top: 117px;
+    display: flex;
+    flex-direction:row;
+    gap: 60px;
+  }
+  
+  .image-card {
+    left: 69px;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .image-card img {
+    width: 100%;
+    display: block;
+  }
+  
+  .info {
+    position: absolute;
+    bottom: -100%; /* Oculto inicialmente */
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(207, 192, 169);
+    color: #333;
+    text-align: left;
+    transition: bottom 0.3s ease;
+  }
+  
+  .image-card:hover .info {
+    bottom: 0; /* Muestra la información al pasar el cursor */
+  }
+  
+  .info h3 {
+    font-size: 18px;
+    color: #0073e6;
+    margin: 0;
+  }
+  
+  .info p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+
+
+
+  #team {
+    display: flex;
+    flex-direction: row; /* Cambia a columna para que el título quede arriba */
+    align-items: center;    /* Centra el contenido horizontalmente */
+    gap: 40px;
+    padding: 20px;
+    justify-content: center;
+   
+  }
+  
+ 
+  
+  .profile-card {
+    background-color: rgb(175, 157, 157);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+   
+  }
+  
+  .profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .profile-card h3 {
+    font-size: 20px;
+    color: #1a2a6c;
+    margin: 0;
+  }
+  
+  .profile-card .position {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .profile-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  #titulo{
+    font-size: 46px;
+    margin-bottom:15px; /* Espacio debajo del título */
+    color: black;
+   justify-content: center;
+    
+  }
+ 
