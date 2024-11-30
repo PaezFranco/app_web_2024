@@ -23,3 +23,108 @@
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio officia nobis repellat nesciunt quam at a beatae? Voluptates veniam optio magni facere quo recusandae fugit, nostrum molestiae eos, hic eaque?</p>
 </body>
 </html>
+
+{% comment %} PROYECTO DJANGO
+
+1. django-admin startproject --name_project--
+2.cd --project_creado--
+
+3.(app) Python manage.py startapp --name_app--
+4. (configuración) proyecto/setting.py/--add_la_app_creada-- (en INSTALLED_APPS)
+
+
+5. (crear vistas en la app) app_creada/views.py
+
+   def about(requets):
+    mensaje='Bienvenido mi nombre es: Amparo Franco'
+    return render(requets, 'mainapp/about.html', {
+        'title': 'Hacerca de Nosotros',
+        'content': 'Somos un grupo de desarrolladores de SW Multiplataforma',
+        'mensaje':'mensaje'
+    })
+
+
+
+
+6.(crear URL para navegación) app_creada/urls.py (crear urls.py y definir rutas)
+
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('mision/', views.mision, name='mision'),
+    path('vision/', views.vision, name='vision'),
+    path('about/', views.about, name='about'),
+]
+
+
+
+
+7. (conectar URL al proyecto principal) name_project/urls.py
+
+
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('mainapp.urls')),  # Incluir las rutas de mainapp
+]
+
+
+
+
+8.(crear los HTML en la carpeta de plantillas) app_creada/templates/app_creada/archivos.html
+(en cada archivo poner:)
+
+{% extends 'layouts/layouts.html' %}
+{% block title %}Inicio{% endblock %}
+{% block content %}
+    <h1>Bienvenido a E-Rápida</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+{% endblock %}
+
+
+
+
+
+9. (crear layouts) app_creada/templates/layouts/layputs.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}E-Rápida{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'index' %}">Inicio</a>
+            <a href="{% url 'mision' %}">Misión</a>
+            <a href="{% url 'vision' %}">Visión</a>
+            <a href="{% url 'about' %}">Acerca de</a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>
+
+
+
+
+
+10.(migrar los archivos) Python manage.py migrate
+
+
+11. (super usuario) Python manage.py createsuperuser
+
+
+12. (correr el servidor) Python manage.py runserver
+
+ {% endcomment %}
+
